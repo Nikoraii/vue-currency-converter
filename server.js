@@ -14,7 +14,7 @@ app.get('/api/convert', (req, res) => {
   axios.get(url)
     .then(response => {
       const data = response.data;
-        res.json(data);
+      res.json(data);
     })
     .catch(error => {
       console.log(error);
